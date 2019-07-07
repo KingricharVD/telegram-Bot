@@ -65,7 +65,7 @@ def main():
     if not os.path.exists("./data/"):
         os.makedirs("data")
 
-    updater = Updater(KEY)
+    updater = Updater(KEY, use_context=True)
     dispatcher = updater.dispatcher
 
     # LINK FUNCTIONS
